@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<link href="css/inf-style.css" rel="stylesheet">
+   <link rel="icon" href="img/icon.png" type="image/x-icon">
+   <meta charset="utf-8">
+   <meta name="description" content="Пример работы простейшего искусственного интеллекта">
+	<title>NeuroEvolution : Flappy Bird</title>
+	<link href='https://fonts.googleapis.com/css?family=Oswald' rel='stylesheet' type='text/css'>
+</head>
+<body>
+     <header class="main-header">
+			   <nav class="main-menu">
+			   <ul>
+                   <li> <a href="home.html">Главное</a> </li>
+                   <li> <a href="interest.html">Интересное</a> </li>
+                   <li> <a href="centers.html">Исследовательские центры</a> </li>
+				   <li> <a href="#">Простейший искусственный интеллект на js</a> </li>
+			   </ul>
+			   </nav>
+			   <div class="allSlides">
+			         <div class="slides">
+						    <img src="img/img3.jpg">
+						    <div class="txt"><a href="#">Искусственный<br>интеллект</a></div>
+					   </div>
+		               <div class="slides">   
+						    <img src="img/img2.jpg">
+						    <div class="txt"><a href="new.html">Современный<br>
+							искусственный<br>интеллект</a></div>
+					   </div>
+					   <div class="slides">   
+						    <img src="img/img1.jpg">
+							<div class="txt"><a href="interest.html">Самое интересное<br>
+							об искусственном<br>интеллекте</a></div>	 
+					  </div>
+					  <div>
+						<a class="click previous" onclick="plusSlides(-1)"><img src="img/last.png"></a>
+						<a class="click next" onclick="plusSlides(1)"><img src="img/next.png"></a>
+				      </div>
+				      <br>
+				      <div style="text-align: center;">
+					     <span class="dot" onclick="currentSlide(1)"></span>       
+		                 <span class="dot" onclick="currentSlide(2)"></span> 
+						 <span class="dot" onclick="currentSlide(3)"></span> 
+		              </div>
+	</header>
+	<div class="content">
+		<h2>Пример машинного обучения, простейший искусственный интеллект на JS</h2>
+		<p>FlappyLearning - это проект JavaScript, который содержит примерно 800 строк кода,
+		позволяет создать библиотеку машинного обучения и реализовать ее в веселой форме,
+		которая учит играть в Flappy Bird, как виртуоз. Методика искусственного интеллекта,
+		используемая в этой библиотеке, называется Neuroevolution и применяет алгоритмы,
+		основанные на нервных системах, обнаруженных в природе,
+		динамически обучающихся от успеха или неудачи каждой итерации.</p>
+		<br>
+		<h2>FlappyLearning</h2>
+		<div class="content" style = "text-align:center;">
+			<canvas id="flappy" width="500" height="512"></canvas> <br/>
+			<button onclick="speed(60)">Скорость х1</button> 
+			<button onclick="speed(120)">Скорость х2</button> 
+			<button onclick="speed(180)">Скорость х3</button> 
+			<button onclick="speed(300)">Скорость х5</button> 
+			<button onclick="speed(0)">Скорость MAX</button> 
+			<br><br><br>
+			<p>Исходный код данного прпоекта находится в открытом доступе на 
+			<a class="new" href="https://github.com/xviniette/FlappyLearning">GitHub</a>, автор Vincent Bazia</p>
+		</div>
+	</div>
+	<footer>Участник: Барынина Марина Витальевна, АПОб-16 <br>
+	Средства: текстовый редактор Notepad++<br>
+	Использованные языки: html, css и js
+	</footer>	
+	<script src = "Neuroevolution.js"></script>
+	<script src = "game.js"></script>
+	<script src="slider.js"></script>
+</body>
+</html>

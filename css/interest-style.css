@@ -1,0 +1,128 @@
+*{ 
+margin: 0;
+max-width:1920px;
+}
+body{
+	background:#000080;
+	color:white;
+	background: linear-gradient(to right, #7B68EE,#9932CC );
+}
+.allSliders{
+	position:relative;
+}
+.slides img{
+	width:100%;
+	border-radius:0px;
+	margin:0;
+	padding:0;
+}
+.click img{
+	position: absolute;
+	top: 290px;
+	width: 3%;
+	margin: 0 1%;
+}                                  
+.next img{
+	right: 0;
+}                         
+.txt{
+	position: absolute;
+	top: 290px;
+	margin-left: 8%;
+	font-size:40px;
+}
+@keyframes color0 {
+	from {color:red}
+	50% {color:yellow}
+	to {color:red}
+}
+.txt a{
+	animation: color0 3s infinite;
+}
+.dot{
+	cursor: pointer;
+	height: 13px;
+	width: 13px;
+	margin: 0 8px;
+	background-color: #bbb;
+	border-radius: 50%;
+	display: inline-block;
+	transition: 0.6s ease;
+}
+.active, .dot:hover{
+	background-color: #717171;
+}
+.main-menu{
+	position:fixed;
+	z-index:3;
+	height:50px;
+	width:100%;
+	margin-top:0;
+	background:#191970;
+	padding-top:20px;
+}
+.main-menu ul li{
+	display:inline;
+	padding-right:7%;
+	font-size:20px;
+}
+.main-menu ul li:first-child{
+	padding-left:8%;
+}
+@keyframes color {
+    from {color:black}
+	50% {color:white}
+    to {color:black}
+}
+a{
+	color:white;
+	margin-top:40px;
+	text-decoration:none;
+	text-transform:uppercase;
+}
+a:hover{
+	color:red;
+}
+.button-txt a{
+	animation: color 2s infinite;
+}
+.conteiner{
+	background:white;
+	border-radius: 30px;
+	color:black;
+	margin:40px 3%;
+	padding: 10px 30px;
+	padding-top:30px;
+	box-shadow: 0 0 30px rgba(0,0,0,0.7);
+}
+.conteiner:hover{
+	background:yellow;
+}
+h2{
+	margin-bottom:10px;
+}
+.button-txt{
+	margin-top:20px;
+	background:black;
+	height:25px;
+	margin-right:17%;
+	width: 15%;
+	text-align:center;
+	padding-top:10px;
+	margin-bottom:20px;
+}
+.button-txt a{
+	color:white;
+	width:26px;
+    text-transform:uppercase;
+	
+}
+footer {
+	position:;
+	left: 0; 
+	bottom: 0;
+	text-align:center;
+	padding: 10px 1%;
+	background: black;
+	width: 98%;
+}
